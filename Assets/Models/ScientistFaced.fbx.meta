@@ -69,6 +69,7 @@ ModelImporter:
     2300000: pCube25
     3300000: pCube25
     4300000: pCube25
+    9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -82,7 +83,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'RightUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -90,7 +92,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -122,8 +124,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -136,8 +138,190 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
-    human: []
-    skeleton: []
+    human:
+    - boneName: Finding_Louie_Character:pPlane17
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: transform12
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: transform13
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ScientistFaced(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube1
+      parentName: ScientistFaced(Clone)
+      position: {x: 0.004757033, y: 0.06409003, z: 0.0015345268}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 4.011111, z: 1}
+    - name: transform3
+      parentName: pCube1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube2
+      parentName: ScientistFaced(Clone)
+      position: {x: 0.004757033, y: 0.06409003, z: 0.0015345268}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 4.011111, z: 1}
+    - name: transform2
+      parentName: pCube2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube6
+      parentName: ScientistFaced(Clone)
+      position: {x: 0.0025540467, y: 0.091655016, z: 0.0010560966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform4
+      parentName: pCube6
+      position: {x: -0.0025540467, y: -0.09307531, z: -0.0023687498}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube7
+      parentName: ScientistFaced(Clone)
+      position: {x: 0.007280757, y: 0.091620594, z: 0.0010560966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform1
+      parentName: pCube7
+      position: {x: -0.0025540467, y: -0.09307531, z: -0.0023687498}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube8
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.11509267, y: 0.039627355, z: -0.037953213}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform10
+      parentName: pCube8
+      position: {x: 0.068600744, y: -0.039627355, z: -0.0006805037}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube9
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.12529416, y: 0.051244862, z: 0.0010828625}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform9
+      parentName: pCube9
+      position: {x: -0.004757033, y: -0.051244862, z: -0.0010828625}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube11
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.11750236, y: 0.070381016, z: -0.042858563}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform8
+      parentName: pCube11
+      position: {x: -0.0030377407, y: -0.070018426, z: 0.0040518176}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube13
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.15597397, y: 0.0793945, z: -0.039337512}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform7
+      parentName: pCube13
+      position: {x: 0.15320092, y: -0.07976391, z: 0.039652657}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube14
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.075280815, y: 0.079641365, z: -0.039350294}
+      rotation: {x: -0.012123523, y: 0.9999265, z: -6.048549e-17, w: 6.1970194e-17}
+      scale: {x: 1, y: 1, z: -1}
+    - name: transform11
+      parentName: pCube14
+      position: {x: 0.15320092, y: -0.07976391, z: 0.039652657}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube15
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.12606075, y: 0.009941853, z: -0.036358237}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.3114405, y: 1.0820808, z: 1.0820808}
+    - name: transform6
+      parentName: pCube15
+      position: {x: 0.0065872245, y: -0.007644647, z: -0.0010828625}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube16
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.10531188, y: 0.009635343, z: -0.036624797}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1.3114405, y: 1.0820808, z: 1.0820808}
+    - name: transform5
+      parentName: pCube16
+      position: {x: 0.0065872245, y: -0.007644647, z: -0.0010828625}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube24
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.10220122, y: 0.053057656, z: -0.079668164}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform14
+      parentName: pCube24
+      position: {x: 0.11558476, y: -0.053057656, z: 0.035922}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Finding_Louie_Character:pPlane17
+      parentName: ScientistFaced(Clone)
+      position: {x: 0.000010529757, y: 0.027195591, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface2
+      parentName: Finding_Louie_Character:pPlane17
+      position: {x: -0.10209625, y: 0.065185085, z: -0.037893545}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.7860411, y: 2.0414464, z: 2.0414464}
+    - name: transform13
+      parentName: polySurface2
+      position: {x: -0.00015323417, y: -0.050523985, z: 0.040212687}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform12
+      parentName: Finding_Louie_Character:pPlane17
+      position: {x: -0.000010529757, y: -0.027195591, z: 0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube25
+      parentName: ScientistFaced(Clone)
+      position: {x: -0.10221662, y: 0.053057652, z: -0.079668164}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -147,10 +331,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

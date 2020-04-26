@@ -23,7 +23,7 @@ public class OutOfBounds : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Enemy"))
         {
             //It seems that the Character Controller function does not like being moved so I had to disable it first to move the player.
             CharacterController cc = player.GetComponent<CharacterController>();

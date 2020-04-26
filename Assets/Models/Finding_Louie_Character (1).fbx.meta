@@ -91,6 +91,8 @@ ModelImporter:
     2300000: pPlane19
     3300000: pPlane19
     4300000: pPlane19
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -103,7 +105,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -111,7 +114,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -143,8 +146,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -158,7 +161,217 @@ ModelImporter:
   humanDescription:
     serializedVersion: 2
     human: []
-    skeleton: []
+    skeleton:
+    - name: Finding_Louie_Character (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane1
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.00013846517, y: 0.047959734, z: -0.038339842}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform2
+      parentName: pPlane1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane2
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.00019771373, y: 0.048305925, z: -0.03816791}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform1
+      parentName: pPlane2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane3
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0, y: 0.048137818, z: -0.038445387}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform3
+      parentName: pPlane3
+      position: {x: -0, y: -0.048099432, z: 0.038449652}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane4
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0, y: 0.048137818, z: -0.038445387}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform4
+      parentName: pPlane4
+      position: {x: -0, y: -0.048099432, z: 0.038449652}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane5
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0, y: 0.04811698, z: -0.03846486}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform11
+      parentName: pPlane5
+      position: {x: -0, y: -0.04811698, z: 0.03846486}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane9
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0, y: 0.051147632, z: -0.038717803}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform10
+      parentName: pPlane9
+      position: {x: -0, y: -0.051147632, z: 0.038717803}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane10
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.000040200575, y: 0.050419245, z: -0.040739182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform12
+      parentName: pPlane10
+      position: {x: 0.000040200575, y: -0.050419245, z: 0.040739182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder2
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0, y: 0.04600029, z: -0.042575207}
+      rotation: {x: 0.24424857, y: -0, z: -0, w: 0.9697127}
+      scale: {x: 0.1581004, y: 0.1581004, z: 0.1581004}
+    - name: transform14
+      parentName: pCylinder2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane11
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.00003125199, y: 0.050419245, z: -0.040739182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform13
+      parentName: pPlane11
+      position: {x: 0.000040200575, y: -0.050419245, z: 0.040739182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane12
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.000004474293, y: 0.050080232, z: -0.040739182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform19
+      parentName: pPlane12
+      position: {x: 0.000004474293, y: -0.050080232, z: 0.040739182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube1
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.019311355, y: 0.03394955, z: -0.043030985}
+      rotation: {x: -0.038249947, y: -5.6260957e-10, z: 0.24508281, w: 0.9687473}
+      scale: {x: 0.1762087, y: 0.11375289, z: 0.1762087}
+    - name: transform15
+      parentName: pCube1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: imagePlane6
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.011788128, y: 0.022577392, z: -0.041737318}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform16
+      parentName: imagePlane6
+      position: {x: 0.011788128, y: -0.022577392, z: 0.041737318}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: imagePlane7
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.011798803, y: 0.022577392, z: -0.041756373}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform17
+      parentName: imagePlane7
+      position: {x: 0.011788128, y: -0.022577392, z: 0.041737318}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: imagePlane8
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.0000053363206, y: 0.024141291, z: -0.042183213}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform18
+      parentName: imagePlane8
+      position: {x: -0.0000053363206, y: -0.024141291, z: 0.042183213}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane13
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.0000053358076, y: 0.027226705, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform20
+      parentName: pPlane13
+      position: {x: -0.0000053358076, y: -0.027226705, z: 0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane14
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.000015723837, y: 0.027226705, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform21
+      parentName: pPlane14
+      position: {x: -0.0000053358076, y: -0.027226705, z: 0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane15
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.000010529822, y: 0.027195591, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform22
+      parentName: pPlane15
+      position: {x: -0.000010529822, y: -0.027195591, z: 0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane16
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.00044813196, y: 0.045683146, z: -0.04115715}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform23
+      parentName: pPlane16
+      position: {x: 0.00043286895, y: -0.045683146, z: 0.04115715}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane17
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.000010529757, y: 0.027195591, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform24
+      parentName: pPlane17
+      position: {x: -0.000010529757, y: -0.027195591, z: 0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane18
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: -0.000017185217, y: 0.027195591, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: transform25
+      parentName: pPlane18
+      position: {x: -0.000010529757, y: -0.027195591, z: 0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pPlane19
+      parentName: Finding_Louie_Character (1)(Clone)
+      position: {x: 0.000010529757, y: 0.027195591, z: -0.04217845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -168,7 +381,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0

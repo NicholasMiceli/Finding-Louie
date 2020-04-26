@@ -46,7 +46,7 @@ public class PlayerControls : MonoBehaviour
 
     private void Update()
     {
-        body = GetComponent<Rigidbody>();
+        //body = GetComponent<Rigidbody>();
         Vector3 myVector = Vector3.zero;
 
         //get input
@@ -67,14 +67,10 @@ public class PlayerControls : MonoBehaviour
         if (MyController.isGrounded)
         {
             myVector = input;
-            //rotate player with camera
-            //Quaternion inputRotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(CameraTransform.forward, Vector3.up), Vector3.up);
-            //myVector = inputRotation * myVector;
-            //myVector *= GroundSpeed;
         }
         else
         {
-            myVector = groundedVelocity;
+            //myVector = groundedVelocity;
 
         }
 
@@ -146,16 +142,17 @@ public class PlayerControls : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        Debug.DrawRay(hit.point, hit.normal, Color.red, 1.25f);
         normal = hit.normal;
     }
 
-    public void ExitMech(Vector3 launchDir, float launchForce)
+   /* public void ExitMech(Vector3 launchDir, float launchForce)
     {
         transform.parent = null;
         //body.AddForce(launchDir * launchForce);
         //body.AddForce(launchDir * launchForce, ForceMode.Impulse);
         //print("Exit Mech");
-    }
+    }*/
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Gascan"))
@@ -178,6 +175,32 @@ public class PlayerControls : MonoBehaviour
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
+            }
+        }
+
+        if (other.gameObject.CompareTag("TutorialGoal"))
+        {
+            SceneManager.LoadScene("Level One");
+           
+        }
+
+        if (other.gameObject.CompareTag("EnemyBullet"))
+        {
+            health -= 1;
+            other.gameObject.SetActive(false);
+            Debug.Log("Health = " + health.ToString());
+
+            if (health == 0)
+            {
+                gameObject.SetActive(false);
+                Debug.Log("ouch");
+                SceneManager.LoadScene("LoseMenu");
+                gameOver = true;
+                if (gameOver == true)
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
             }
         }
 
@@ -207,6 +230,7 @@ public class PlayerControls : MonoBehaviour
                 }
             }
         }
+
     }
 
 
@@ -239,4 +263,9 @@ public class PlayerControls : MonoBehaviour
 
 
     }
+
+
+   
+
+
 }

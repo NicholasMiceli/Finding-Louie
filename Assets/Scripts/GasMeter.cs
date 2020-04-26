@@ -7,19 +7,22 @@ using UnityEngine.UI;
 public class GasMeter : MonoBehaviour
 {
     public Slider gasMeter;
-    public static int gasTotal = 10;
+    public static int gasTotal = 20;
     public static bool sitting;
     public bool seatTick = true;
+    public int gasTotalP;
+   
+
     void Start()
     {
-
+      
     }
-
-
     void Update()
     {
          sitting = GetInVehicle.seatCheck;
-         if (sitting == true && seatTick == true && gasTotal <= 10 && gasTotal > 0)
+        
+
+         if (sitting == true && seatTick == true && gasTotal <= 20 && gasTotal > 0)
          {
 
             gasTotal -= 1;
@@ -38,20 +41,22 @@ public class GasMeter : MonoBehaviour
      {
          if (other.gameObject.CompareTag("Gascan"))
          {
-             if (gasTotal < 10)
+             if (gasTotal < 20)
              {
+                
+                gasTotal = 20;
 
-                 gasTotal = 10;
-                 Debug.Log("Gas = " + gasTotal.ToString());
-                 other.gameObject.SetActive(false);
-             }
+                Debug.Log("Gas = " + gasTotal.ToString());
+                other.gameObject.SetActive(false);
+               
+            }
              
          }
      }
      IEnumerator Fuel()
      {
          seatTick = false;
-         yield return new WaitForSecondsRealtime(1);
+         yield return new WaitForSecondsRealtime(5);
          seatTick = true;
      }
     

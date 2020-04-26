@@ -9,15 +9,18 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public GameObject healthBar;
-   
-    public bool playerMove;
+    public GameObject mechHealth;
+    public GameObject ammoEnergy;
+    public GameObject mechFuel;
+    public bool sitDown;
+    public static bool playerMove;
 
 
     private void Start()
     {
         GameObject thePlayer = GameObject.Find("Player");
-        PlayerMove playerMove = thePlayer.GetComponent<PlayerMove>();
-        //playerMove.maskCheck;
+        WallJump playerMove = thePlayer.GetComponent<WallJump>();
+        GetInVehicle.seatCheck = false;
     }
 
 
@@ -44,7 +47,15 @@ public class PauseMenu : MonoBehaviour
         
         pauseMenuUI.SetActive(false);
         healthBar.SetActive(true);
-     
+      
+        if (GetInVehicle.seatCheck == true)
+        {
+            healthBar.SetActive(false);
+            mechFuel.SetActive(true);
+            mechHealth.SetActive(true);
+            ammoEnergy.SetActive(true);
+        }
+      
         Time.timeScale = 1f;
         GameIsPaused = false;
 
@@ -56,7 +67,14 @@ public class PauseMenu : MonoBehaviour
        
         pauseMenuUI.SetActive(true);
         healthBar.SetActive(false);
-        
+        if (GetInVehicle.seatCheck == false)
+        {
+            
+            mechFuel.SetActive(false);
+            mechHealth.SetActive(false);
+            ammoEnergy.SetActive(false);
+        }
+
         Time.timeScale = 0f;
         GameIsPaused = true;
         

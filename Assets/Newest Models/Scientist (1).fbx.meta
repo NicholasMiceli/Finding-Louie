@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 2e5cd1569263bac4184303d7f90c4ad5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head_Top
+    100002: L_Arm_Elbow
+    100004: L_Arm_Shoulder
+    100006: L_Arm_Wrist
+    100008: L_Hand_Base
+    100010: L_Hand_Finger__P_1
+    100012: L_Hand_Finger_I_1
+    100014: L_Hand_Finger_I_3
+    100016: L_Hand_Finger_I__
+    100018: L_Hand_Finger_I_Tip
+    100020: L_Hand_Finger_M_1
+    100022: L_Hand_Finger_M_2
+    100024: L_Hand_Finger_M_3
+    100026: L_Hand_Finger_M_Tip
+    100028: L_Hand_Finger_P_2
+    100030: L_Hand_Finger_P_3
+    100032: L_Hand_Finger_P_Tip
+    100034: L_Hand_Finger_R_1
+    100036: L_Hand_Finger_R_2
+    100038: L_Hand_Finger_R_3
+    100040: L_Hand_Finger_R_Tip
+    100042: L_Hand_Finger_T_1
+    100044: L_Hand_Finger_T_2
+    100046: L_Hand_Finger_T_3
+    100048: L_Leg_Ankle
+    100050: L_Leg_Ball
+    100052: L_Leg_Heel
+    100054: L_Leg_Hip
+    100056: L_Leg_Knee
+    100058: L_Leg_Toe
+    100060: Neck_Base_1
+    100062: pCube25
+    100064: pSphere1
+    100066: pSphere2
+    100068: R_Arm_Elbow
+    100070: R_Arm_Shoulder
+    100072: R_Arm_Wrist
+    100074: R_Hand_Base
+    100076: R_Hand_Finger__P_1
+    100078: R_Hand_Finger_I_1
+    100080: R_Hand_Finger_I_3
+    100082: R_Hand_Finger_I__2
+    100084: R_Hand_Finger_I_Tip
+    100086: R_Hand_Finger_M_1
+    100088: R_Hand_Finger_M_2
+    100090: R_Hand_Finger_M_3
+    100092: R_Hand_Finger_M_Tip
+    100094: R_Hand_Finger_P_2
+    100096: R_Hand_Finger_P_3
+    100098: R_Hand_Finger_P_Tip
+    100100: R_Hand_Finger_R_1
+    100102: R_Hand_Finger_R_2
+    100104: R_Hand_Finger_R_3
+    100106: R_Hand_Finger_R_Tip
+    100108: R_Hand_Finger_T_1
+    100110: R_Hand_Finger_T_2
+    100112: R_Hand_Finger_T_3
+    100114: R_Leg_Ankle
+    100116: R_Leg_Ball
+    100118: R_Leg_Heel
+    100120: R_Leg_Hip
+    100122: R_Leg_Knee
+    100124: R_Leg_Toe
+    100126: //RootNode
+    100128: Spine_1
+    100130: Spine_2
+    100132: Spine_3
+    100134: Spine_4
+    100136: Spine_5
+    400000: Head_Top
+    400002: L_Arm_Elbow
+    400004: L_Arm_Shoulder
+    400006: L_Arm_Wrist
+    400008: L_Hand_Base
+    400010: L_Hand_Finger__P_1
+    400012: L_Hand_Finger_I_1
+    400014: L_Hand_Finger_I_3
+    400016: L_Hand_Finger_I__
+    400018: L_Hand_Finger_I_Tip
+    400020: L_Hand_Finger_M_1
+    400022: L_Hand_Finger_M_2
+    400024: L_Hand_Finger_M_3
+    400026: L_Hand_Finger_M_Tip
+    400028: L_Hand_Finger_P_2
+    400030: L_Hand_Finger_P_3
+    400032: L_Hand_Finger_P_Tip
+    400034: L_Hand_Finger_R_1
+    400036: L_Hand_Finger_R_2
+    400038: L_Hand_Finger_R_3
+    400040: L_Hand_Finger_R_Tip
+    400042: L_Hand_Finger_T_1
+    400044: L_Hand_Finger_T_2
+    400046: L_Hand_Finger_T_3
+    400048: L_Leg_Ankle
+    400050: L_Leg_Ball
+    400052: L_Leg_Heel
+    400054: L_Leg_Hip
+    400056: L_Leg_Knee
+    400058: L_Leg_Toe
+    400060: Neck_Base_1
+    400062: pCube25
+    400064: pSphere1
+    400066: pSphere2
+    400068: R_Arm_Elbow
+    400070: R_Arm_Shoulder
+    400072: R_Arm_Wrist
+    400074: R_Hand_Base
+    400076: R_Hand_Finger__P_1
+    400078: R_Hand_Finger_I_1
+    400080: R_Hand_Finger_I_3
+    400082: R_Hand_Finger_I__2
+    400084: R_Hand_Finger_I_Tip
+    400086: R_Hand_Finger_M_1
+    400088: R_Hand_Finger_M_2
+    400090: R_Hand_Finger_M_3
+    400092: R_Hand_Finger_M_Tip
+    400094: R_Hand_Finger_P_2
+    400096: R_Hand_Finger_P_3
+    400098: R_Hand_Finger_P_Tip
+    400100: R_Hand_Finger_R_1
+    400102: R_Hand_Finger_R_2
+    400104: R_Hand_Finger_R_3
+    400106: R_Hand_Finger_R_Tip
+    400108: R_Hand_Finger_T_1
+    400110: R_Hand_Finger_T_2
+    400112: R_Hand_Finger_T_3
+    400114: R_Leg_Ankle
+    400116: R_Leg_Ball
+    400118: R_Leg_Heel
+    400120: R_Leg_Hip
+    400122: R_Leg_Knee
+    400124: R_Leg_Toe
+    400126: //RootNode
+    400128: Spine_1
+    400130: Spine_2
+    400132: Spine_3
+    400134: Spine_4
+    400136: Spine_5
+    2100000: aiStandardSurface1
+    2100002: aiStandardSurface2
+    4300000: pCube25
+    4300002: pSphere1
+    4300004: pSphere2
+    9500000: //RootNode
+    13700000: pCube25
+    13700002: pSphere1
+    13700004: pSphere2
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: 5ea7c9d2fe7d17c4bbe97ede713c05be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface2
+    second: {fileID: 2100000, guid: d69ad42effb53b04e9799bbc66e4a928, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ScientistT
+    second: {fileID: 2800000, guid: fa8bab676b9dbe44786357c97f0b6a46, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

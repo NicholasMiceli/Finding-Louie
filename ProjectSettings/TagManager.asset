@@ -8,6 +8,13 @@ TagManager:
   - Gascan
   - Enemy
   - Goal
+  - Ground
+  - Bullet
+  - TutorialGoal
+  - EnemyBullet
+  - LeveloneGoal
+  - LeveltwoGoal
+  - Pillars
   layers:
   - Default
   - TransparentFX
@@ -20,7 +27,7 @@ TagManager:
   - PostProcessing
   - Ground
   - Enemy
-  - 
+  - Wall
   - 
   - 
   - 

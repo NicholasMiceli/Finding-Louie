@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class Healthbar : MonoBehaviour
 {
     public Slider healthBar;
-    PlayerMove playerHealth;
+    WallJump playerHealth;
 
 
 
     private void Start()
     {
 
-       playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
+       playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<WallJump>();
     }
 
     private void Update()

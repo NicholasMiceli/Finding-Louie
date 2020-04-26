@@ -11,17 +11,19 @@ public class MechMove : MonoBehaviour
     public float gravity = -9.8f;
     public static bool GameIsPaused = false;
     // public GameObject pauseMenuUI;
-    public GameObject healthBar;
+   // public GameObject healthBar;
     public static bool enemyStop = false;   
-    public int health = 5;
+    public int mechHealth = 5;
     public bool damageTimer = true;
-    public int gasTotalPlayer;
+    public static int gasTotalPlayer;
     Vector3 velocity;
     bool isGrounded;
     bool gamePaused = false;
     bool gameOver = false;
     private Vector3 moveDirection = Vector3.zero;
     //Camera cam;
+
+    public Animator MplayerAnim;
 
     void Start()
     {
@@ -63,41 +65,75 @@ public class MechMove : MonoBehaviour
 
 
 
-      //  Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-      //  Vector3 planeNormal = -cam.forward;
+        //  Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        //  Vector3 planeNormal = -cam.forward;
 
-      //  mousePos = Vector3.ProjectOnPlane(mousePos, planeNormal);
-      //  Vector3 pos = Vector3.ProjectOnPlane(transform.position, planeNormal);
+        //  mousePos = Vector3.ProjectOnPlane(mousePos, planeNormal);
+        //  Vector3 pos = Vector3.ProjectOnPlane(transform.position, planeNormal);
 
-      //  Vector3 dir = (mousePos - pos).normalized;
-      //  airMotion = dir * jumpForce;
+        //  Vector3 dir = (mousePos - pos).normalized;
+        //  airMotion = dir * jumpForce;
+
+        if (velocity == Vector3.zero)
+        {
+            MplayerAnim.SetBool("isMPlayerIdle", true);
+            MplayerAnim.SetBool("isMPlayerRunning", false);
+
+        }
+        else
+        {
+            MplayerAnim.SetBool("isMPlayerIdle", false);
+            MplayerAnim.SetBool("isMPlayerRunning", true);
+        }
 
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Gascan"))
-        {
-            if (gasTotalPlayer < 10)
-            {
-
-                gasTotalPlayer = 10;
-                Debug.Log("Gas = " + gasTotalPlayer.ToString());
-                other.gameObject.SetActive(false);
-            }
-
-        }
-        /*
-         if (other.gameObject.CompareTag("Goal"))
+        /* if (other.gameObject.CompareTag("Gascan"))
          {
-             SceneManager.LoadScene("Win Scene");
-             gameOver = true;
-             if (gameOver == true)
+             if (gasTotalPlayer < 10)
              {
-                 Cursor.visible = true;
-                 Cursor.lockState = CursorLockMode.None;
+
+                 gasTotalPlayer = 10;
+                 Debug.Log("Gas = " + gasTotalPlayer.ToString());
+                 other.gameObject.SetActive(false);
              }
-         }*/
+
+         }
+         
+          if (other.gameObject.CompareTag("Goal"))
+          {
+              SceneManager.LoadScene("Win Scene");
+              gameOver = true;
+              if (gameOver == true)
+              {
+                  Cursor.visible = true;
+                  Cursor.lockState = CursorLockMode.None;
+              }
+          }*/
+        if (other.gameObject.CompareTag("EnemyBullet"))
+        {
+            if (damageTimer == true)
+            {
+                {
+                    mechHealth -= 1;
+
+                    Debug.Log("Health = " + mechHealth.ToString());
+                }
+            }
+            if (mechHealth == 0)
+            {
+                gameObject.SetActive(false);
+                SceneManager.LoadScene("LoseMenu");
+                gameOver = true;
+                if (gameOver == true)
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
+            }
+        }
 
     }
 
@@ -108,12 +144,12 @@ public class MechMove : MonoBehaviour
             if (damageTimer == true)
             {
                 {
-                    health -= 1;
+                    mechHealth -= 1;
                     StartCoroutine(Pain());
-                    Debug.Log("Health = " + health.ToString());
+                    Debug.Log("Health = " + mechHealth.ToString());
                 }
             }
-            if (health == 0)
+            if (mechHealth == 0)
             {
                 gameObject.SetActive(false);
                 SceneManager.LoadScene("LoseMenu");

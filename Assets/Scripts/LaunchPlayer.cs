@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaunchPlayer : MonoBehaviour
 {
-    PlayerControls player;
+    WallJump player;
     GameObject character;
     public Transform launchDirection;
     public float launchForce = 400f;
@@ -12,7 +12,7 @@ public class LaunchPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindObjectOfType<PlayerControls>();
+        player = GameObject.FindObjectOfType<WallJump>();
         character = GameObject.Find("Player");
     }
 
@@ -37,6 +37,6 @@ public class LaunchPlayer : MonoBehaviour
 
         //launch direction
         Vector3 launchDir = new Vector3(launchDirX - startPointX, launchDirY - startPointY, launchDirZ - startPointZ);
-        player.ExitMech(launchDir, launchForce);
+        //player.ExitMech(launchDir, launchForce);
     }
 }

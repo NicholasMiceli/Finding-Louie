@@ -14,6 +14,9 @@ public class EnemyController : MonoBehaviour
     private int destPoint = 0;
     public int enemyHealth = 5;
     public float speed = 10.01f;
+    public GameObject FloatingTextPrefab;
+
+    public Animator anim;
 
     Transform target;
     NavMeshAgent agent;
@@ -23,6 +26,8 @@ public class EnemyController : MonoBehaviour
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
         GotoNextPoint();
+        //anim = GetComponent<Animator>();
+        //anim.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
     void Update()
@@ -31,16 +36,21 @@ public class EnemyController : MonoBehaviour
         if(distance <= lookRadius)
         {
             agent.SetDestination(target.position);
+            anim.SetBool("isEnemyIdle", false);
+            anim.SetBool("isEnemyRunning", true);
 
-            if(distance <= agent.stoppingDistance)
+            if (distance <= agent.stoppingDistance)
             {
-
+                
             }
         }
         else
         {
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
                 GotoNextPoint();
+
+            anim.SetBool("isEnemyRunning", false);
+            anim.SetBool("isEnemyIdle", true);
         }
 
        
@@ -76,14 +86,23 @@ public class EnemyController : MonoBehaviour
         destPoint = (destPoint + 1) % points.Length;
     }
 
-    void OnTriggerEnter(Collider Bullet)
+    void OnTriggerEnter(Collider other)
     {
-        enemyHealth -= 1;
-
-        if(enemyHealth == 0)
+        if (other.gameObject.CompareTag("Bullet"))
         {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+            enemyHealth -= 1;
+
+            if (FloatingTextPrefab && enemyHealth > 0)
+            {
+                ShowFloatingText();
+            }
+
+            if (enemyHealth == 0)
+            {
+                gameObject.SetActive(false);
+                Destroy(gameObject);
+                Debug.Log("ouch");
+            }
         }
     }
 
@@ -98,4 +117,11 @@ public class EnemyController : MonoBehaviour
          }
          else cur = (cur + 1) % waypoints.Length;
      }*/
+
+    void ShowFloatingText()
+    {
+        var go = Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMesh>().text = enemyHealth.ToString();
+    }
+
 }
